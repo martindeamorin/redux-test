@@ -1,5 +1,5 @@
 import {applyMiddleware, createStore} from "redux"
-import counterReducer from "../reducer/counterReducer"
+import rootReducer from "../reducer/rootReducer"
 import thunk from 'redux-thunk'
 
 
@@ -11,5 +11,5 @@ Principios:
 3- Los cambios se realizan a traves de funciones puras (reducers)
 */
 export default function storeInit(){
-    return createStore(counterReducer, applyMiddleware(thunk));
+    return createStore(rootReducer, applyMiddleware(thunk));
 }
