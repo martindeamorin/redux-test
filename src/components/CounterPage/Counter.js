@@ -1,5 +1,5 @@
 import {  useDispatch, useSelector } from "react-redux"
-import { ACTION_DECREMENT, ACTION_INCREMENT, ACTION_RESET, getNumber } from "../actions/actions";
+import { ACTION_DECREMENT, ACTION_INCREMENT, ACTION_RESET, getNumber } from "../../actions/actions";
 
 export default function Counter(){
     const {counter} = useSelector(store => store)
